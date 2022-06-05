@@ -13,7 +13,11 @@ spring:
             - Path=/ms-product/**
           filters:
             - RewritePath=/ms-product/(?<remaining>.*), /$\{remaining}
-
+okta:
+  oauth2:
+    client-id: 0oa59z7gmoGaXUuv75d7
+    client-secret: J9JDtWDr-SJHeoRQ878RABP75feO7GSLdQM4tydV
+    issuer: https://dev-42801062.okta.com/oauth2/default
 eureka:
   instance:
     preferIpAddress: false
